@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    {% include "includes/head.html" %}
+
+<body id="body" class="dark-sidebar">
+  
+    {%include "includes/nav.html"%}
+    <div class="page-wrapper">
+
+        <!-- Page Content-->
+        <div class="page-content-tab">
+
+            <div class="container-fluid">
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            
+                           
+                        </div>
+                        <!--end page-title-box-->
+                    </div>
+                    <!--end col-->
+                </div>
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+                    
+                    <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Суретті жүктеңіз</h4>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <div class="d-grid">
+                                        <p class="text-muted">Жүктеу батырмасын басып қажетті суретті жүктеңіз</p>
+                                    
+                                        <input type="file" id="input-file" name="input-file" accept="image/*" onchange="handleChange()"  hidden/>
+
+                                        <label class="btn-upload btn btn-primary mt-4" for="input-file">Жүктеу</label>
+                                    </div>
+                                                                
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                    </div><!--end col--> 
+                    <div class="pr-box d-block justify-content-center rounded shadow overflow-hidden bg-light p-1 col-xl-6" ></div>
+               
+            </div><!-- container -->
+
+       
+            
+           <!--Start Footer-->
+           {% comment %} <!-- Footer Start -->
+           <footer class="footer text-center text-sm-start">
+               &copy; <script>
+                   document.write(new Date().getFullYear())
+               </script> Unikit <span class="text-muted d-none d-sm-inline-block float-end">Crafted with <i
+                       class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+           </footer> {% endcomment %}
+           <!-- end Footer -->                
+           <!--end footer-->
+        </div>
+        <!-- end page content -->
+    </div>
+    <!-- end page-wrapper -->
+
+    <!-- Javascript  -->
+    {%include "includes/scripts.html"%}
+    
+</body>
+
+</html>

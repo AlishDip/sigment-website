@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "includes/head.html" %}
+<body id="body" class="dark-sidebar">
+
+    {% include "includes/nav.html"%}
+
+    <div class="page-wrapper">
+
+        <!-- Page Content-->
+        <div class="page-content-tab">
+
+            <div class="container-fluid">
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="float-end">
+                               
+                            </div>
+                            <h4 class="page-title">Жүктеңіз</h4>
+                        </div>
+                        <!--end page-title-box-->
+                    </div>
+                    <!--end col-->
+                </div>
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+                    
+
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Бірнеше сурет жүктеңіз</h4>
+                             
+                            </div><!--end card-header-->
+                            <div class="card-body">
+                                <div id="drag-drop-area"></div>                                
+                            </div><!--end card-body-->
+                        </div><!--end card-->
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="d-none" id="tpl">
+                    <div class="card mt-1 mb-0 shadow-none border dropzone-previews" >
+                        <div class="p-2">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img data-dz-thumbnail src="#" class="avatar-sm rounded bg-light" alt="">
+                                </div>
+                                <div class="col pl-0">
+                                    <a href="javascript:void(0);" class="text-muted fw-bold" data-dz-name></a>
+                                    <p class="mb-0" data-dz-size></p>
+                                    <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+
+                                </div>
+                                <div class="col-auto">
+                                    <!-- Button -->
+                                    <a class="btn btn-link btn-lg text-muted" data-dz-remove>
+                                        <i class="dripicons-cross"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-md-6 col-lg-auto filters-group-wrap">
+                        <div class="filters-group mb-3">
+                            <p class="filter-label mb-0">Фильтр</p>
+                            <div class="btn-group filter-options">
+                                <button class="btn btn-primary" data-group="dog">Ит</button>
+                                <button class="btn btn-primary" data-group="cat">Мысық</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="grid" class="row g-0">
+
+                    
+                    
+
+            </div><!-- container -->
+
+           
+            
+           <!--Start Footer-->
+           <!-- Footer Start -->
+          
+           <!-- end Footer -->                
+           <!--end footer-->
+        </div>
+        <!-- end page content -->
+    </div>
+    <!-- end page-wrapper -->
+
+
+{%include "includes/scripts.html"%}
+</body>
+
+</html>

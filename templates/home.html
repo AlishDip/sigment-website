@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "includes/head.html" %}
+<body id="body" class="dark-sidebar">
+
+    {% include "includes/nav.html"%}
+
+    <div class="page-wrapper">
+
+<div class="page-content-tab">
+    <div class="tab-content">
+        <div class="tab-pane p-3 active" id="Post" role="tabpanel">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                       
+                    </div><!--end row-->
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Жоба туралы:</h3>
+                            <p>Менің дипломдық жұмысым нейрондық желілерді пайдалану арқылы суреттерді тану және классификациялау мәселелерін зерттеуге арналған. Бұл жұмыста мен екі негізгі тапсырманы орындадым:</p>
+                            <h5>Иттер мен мысықтардың суреттерін классификациялау</h5>
+                            <p>Мен иттер мен мысықтардың суреттерін классификациялау үшін Конволюциялық Нейрондық Желілерді (CNN) қолдандым. CNN модельдері суреттердегі үлгілерді тану және оларды тиісті категорияларға жатқызу үшін өте тиімді.</p>
+                            <h5>Қазақ тіліндегі қолжазбаны тану</h5>
+                            <p>Қолжазбаны тану үшін мен Microsoft TrOCR нейрондық желісін қолдандым. TrOCR моделі әртүрлі қолжазбалық мәтіндерді дәл тану үшін арнайы жасалған.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Нейрондық желілер туралы:</h3>
+                            <p>Нейрондық желілер – бұл жасанды интеллекттің маңызды бөлігі болып табылатын және биологиялық нейрондардың жұмыс істеу принципіне негізделген модельдер. Олар бірнеше қабаттан тұратын құрылымдар, әр қабат өз кезегінде белгілі бір функцияны орындайды. Нейрондық желілер көптеген есептерді, мысалы, суреттерді тану, сөйлеуді тану, табиғи тілдерді өңдеу және т.б. шешу үшін қолданылады.</p>
+                            <h5>Иттер мен мысықтардың суреттерін классификациялау:</h5>
+                            <p>Бұл бөлімде мен иттер мен мысықтардың суреттерін дұрыс классификациялау үшін CNN модельдерін қалай үйреткенім туралы айтып беремін. Процесс келесі қадамдарды қамтыды:</p>
+                            <ul>
+                                <li>Деректер жинау және алдын ала өңдеу: Бұл қадамда суреттер жинақталып, оларды нейрондық желіге беру үшін дайындалады. Деректерді масштабтау, нормализациялау және аугментациялау сияқты әдістер қолданылады.</li>
+                                <li>Модельді құру және үйрету: Бұл қадамда CNN архитектурасы құрылады және суреттерді дұрыс классификациялау үшін модель үйретіледі.</li>
+                                <li>Нәтижелерді бағалау және талдау: Үйретілген модельдің тиімділігі әртүрлі метрикалар арқылы бағаланады, мысалы, дәлдік, толықтық және т.б.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Қазақ тіліндегі қолжазбаны тану:</h5>
+                            <p>Бұл бөлімде мен Microsoft TrOCR нейрондық желісін қолдану арқылы қазақ тіліндегі қолжазбаларды тану процесін сипаттаймын. Бұл модель әртүрлі қолжазбалық мәтіндерді тиімді тануға мүмкіндік береді және келесі қадамдарды қамтиды:</p>
+                            <ul>
+                                <li>Деректерді жинау және алдын ала өңдеу: Қолжазба мәтіндер суретке түсіріліп, оларды тануға дайындау үшін өңделеді. Суреттерді масштабтау, қарапайымдау және контрастты жақсарту әдістері қолданылады.</li>
+                                <li>Модельді конфигурациялау және үйрету: TrOCR моделі қазақ тіліндегі қолжазбаларды тануға бейімделеді және үйретіледі.</li>
+                                <li>Нәтижелерді бағалау және талдау: Үйретілген модельдің нәтижелері әртүрлі метрикалар арқылы бағаланады, мысалы, дәлдік, сәйкестік және т.б.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Датасет туралы:</h3>
+                            <p>Датасет – бұл нейрондық желіні үйрету және тексеру үшін пайдаланылатын деректер жинағы. Менің жобамда иттер мен мысықтардың суреттерін классификациялау және қазақ тіліндегі қолжазбаларды тану үшін әртүрлі датасеттер қолданылды. Датасеттердің сапасы модельдің тиімділігіне тікелей әсер етеді.</p>
+                            <h5>Датасеттердің проблемалары:</h5>
+                            <ul>
+                                <li>Деректердің жетіспеушілігі: Үлкен көлемдегі сапалы деректердің болмауы модельдің тиімділігін төмендетуі мүмкін.</li>
+                                <li>Деректердің теңгерімсіздігі: Класстардың арасындағы теңгерімсіздік (мысалы, иттердің суреттері көп, ал мысықтардың аз) модельдің бейімділігіне әсер етеді.</li>
+                                <li>Шулы деректер: Суреттердегі артық ақпарат немесе қателіктер модельдің үйрену процесін қиындатуы мүмкін.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Деректерді алдын ала өңдеу:</h3>
+                            <p>Деректерді алдын ала өңдеу – бұл суреттерді нейрондық желіге беру үшін дайындау процесі. Бұл процесс келесі қадамдарды қамтиды:</p>
+                            <ul>
+                                <li>Масштабтау: Суреттерді біркелкі өлшемге келтіру.</li>
+                                <li>Нормализациялау: Пиксель мәндерін белгілі бір диапазонға келтіру (мысалы, 0-ден 1-ге дейін).</li>
+                                <li>Аугментациялау: Деректердің әртүрлілігін арттыру үшін суреттерді айналдыру, аудару, өзгерту.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Суреттерді оқуға дайындау:</h3>
+                            <p>Масштабтау: Суреттерді біркелкі өлшемге келтіру үшін қайта өлшеу.</p>
+                            <h5>Фильтрлер:</h5>
+                            <p>Суреттерді алдын ала өңдеуде қолданылатын кейбір фильтрлер:</p>
+                            <ul>
+                                <li>Gaussian Blur: Шуды азайту және суреттердің шеттерін тегістеу.</li>
+                                <li>Edge Detection: Суреттердегі объектілердің шеттерін анықтау.</li>
+                                <li>Thresholding: Суреттерді екілік түрге келтіру (қара және ақ) үшін белгілі бір шекті мәнді қолдану.</li>
+                                <img class="col-9" src= "/static/assets/images/output.png">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Қорытынды:</h3>
+                            <p>Менің жұмысымның нәтижелері нейрондық желілерді пайдалану арқылы суреттерді тану және классификациялау мәселелерін шешудің тиімді жолдарын көрсетеді. Бұл технологиялар болашақта көптеген салаларда қолданылуы мүмкін.</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+               
+            </div><!--end row-->
+        </div>
+        <div class="tab-pane p-3" id="Gallery" role="tabpanel">
+            <div class="row">
+                <div class="col-md-6 col-lg-auto filters-group-wrap">
+                    <div class="filters-group mb-3">
+                        <div class="btn-group filter-options">
+                            <button class="btn btn-primary" data-group="fashion">Fashion</button>
+                            <button class="btn btn-primary" data-group="animal">Animal</button>
+                            <button class="btn btn-primary" data-group="food">Food</button>
+                        </div>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+            <div id="grid" class="row g-0">
+                <div class="col-md-4 col-lg-3 picture-item" data-groups='["fashion"]'>
+                    <a href="assets/images/small/img-1.jpg" class="lightbox">
+                        <img src="assets/images/small/img-1.jpg" alt="" class="img-fluid" />
+                    </a>
+                </div><!--end col-->
+                <div class="col-md-4 col-lg-3 picture-item picture-item--overlay" data-groups='["food"]'>
+                    <a href="assets/images/small/img-2.jpg" class="lightbox">
+                        <img src="assets/images/small/img-2.jpg" alt="" class="img-fluid" />
+                    </a>
+                </div><!--end col-->
+                <div class="col-md-4 col-lg-3 picture-item" data-groups='["animal"]'>
+                    <a href="assets/images/small/img-3.jpg" class="lightbox">
+                        <img src="assets/images/small/img-3.jpg" alt="" class="img-fluid" />
+                    </a>
+                </div><!--end col-->
+                <div class="col-md-4 col-lg-3 picture-item picture-item--h3" data-groups='["food"]'>
+                    <a href="assets/images/small/img-4.jpg" class="lightbox">
+                        <img src="assets/images/small/img-4.jpg" alt="" class="img-fluid" />
+                    </a>
+                </div><!--end col-->
+                <div class="col-md-4 col-lg-3 picture-item" data-groups='["food", "animal"]'>
+                    <a href="assets/images/small/img-5.jpg" class="lightbox">
+                        <img src="assets/images/small/img-5.jpg" alt="" class="img-fluid" />
+                    </a>
+                </div><!--end col-->
+                <div class="col-md-4 col-lg-3 picture-item picture-item--overlay" data-groups='["fashion"]'>
+                    <a href="assets/images/small/img-6.jpg" class="lightbox">
+                        <img src="assets/images/small/img-6.jpg" alt="" class="img-fluid" />
+                    </a>
+                </div><!--end col-->
+                <div class="col-md-4 col-lg-3 picture-item picture-item--h3" data-groups='["food"]'>
+                    <a href="assets/images/small/img-2.jpg" class="lightbox">
+                        <img src="assets/images/small/img-2.jpg" alt="" class="img-fluid" />
+                    </a>
+                </div><!--end col-->
+                <div class="col-md-4 col-lg-3 picture-item picture-item--h3" data-groups='["fashion"]'>
+                    <a href="assets/images/small/img-1.jpg" class="lightbox">
+                        <img src="assets/images/small/img-1.jpg" alt="" class="img-fluid" />
+                    </a>
+                </div> <!--end col-->
+            </div><!--end row-->
+        </div>
+        <div class="tab-pane p-3" id="Settings" role="tabpanel">
+            <div class="row">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h5 class="card-title">Personal Information</h5>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end card-header-->
+                        <div class="card-body">
+                            <div class="form-group mb-3 row">
+                                <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">First Name</label>
+                                <div class="col-lg-9 col-xl-8">
+                                    <input class="form-control" type="text" value="Rosa">
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">Last Name</label>
+                                <div class="col-lg-9 col-xl-8">
+                                    <input class="form-control" type="text" value="Dodson">
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">Company Name</label>
+                                <div class="col-lg-9 col-xl-8">
+                                    <input class="form-control" type="text" value="MannatThemes">
+                                    <span class="form-text text-muted font-12">We'll never share your email with anyone else.</span>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">Contact Phone</label>
+                                <div class="col-lg-9 col-xl-8">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="las la-phone"></i></span>
+                                        <input type="text" class="form-control" value="+123456789" placeholder="Phone" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">Email Address</label>
+                                <div class="col-lg-9 col-xl-8">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="las la-at"></i></span>
+                                        <input type="text" class="form-control" value="rosa.dodson@demo.com" placeholder="Email" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">Website Link</label>
+                                <div class="col-lg-9 col-xl-8">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="la la-globe"></i></span>
+                                        <input type="text" class="form-control" value=" https://mannatthemes.com/" placeholder="Email" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">USA</label>
+                                <div class="col-lg-9 col-xl-8">
+                                    <select class="form-select">
+                                        <option>London</option>
+                                        <option>India</option>
+                                        <option>USA</option>
+                                        <option>Canada</option>
+                                        <option>Thailand</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <div class="col-lg-9 col-xl-8 offset-lg-3">
+                                    <button type="submit" class="btn btn-de-primary">Submit</button>
+                                    <button type="button" class="btn btn-de-danger">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--end col-->
+                <div class="col-lg-6 col-xl-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Change Password</h5>
+                        </div><!--end card-header-->
+                        <div class="card-body">
+                            <div class="form-group mb-3 row">
+                                <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">Current Password</label>
+                                <div class="col-lg-9 col-xl-8">
+                                    <input class="form-control" type="password" placeholder="Password">
+                                    <a href="#" class="text-primary font-12">Forgot password ?</a>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">New Password</label>
+                                <div class="col-lg-9 col-xl-8">
+                                    <input class="form-control" type="password" placeholder="New Password">
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="col-xl-3 col-lg-3 text-end mb-lg-0 align-self-center form-label">Confirm Password</label>
+                                <div class="col-lg-9 col-xl-8">
+                                    <input class="form-control" type="password" placeholder="Re-Password">
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <div class="col-lg-9 col-xl-8 offset-lg-3">
+                                    <button type="submit" class="btn btn-de-primary">Change Password</button>
+                                    <button type="button" class="btn btn-de-danger">Cancel</button>
+                                </div>
+                            </div>
+                        </div><!--end card-body-->
+                    </div><!--end card-->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Other Settings</h5>
+                        </div><!--end card-header-->
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Email_Notifications" checked>
+                                <label class="form-check-label" for="Email_Notifications">
+                                    Email Notifications
+                                </label>
+                                <span class="form-text text-muted font-12 mt-0">Do you need them?</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="API_Access">
+                                <label class="form-check-label" for="API_Access">
+                                    API Access
+                                </label>
+                                <span class="form-text text-muted font-12 mt-0">Enable/Disable access</span>
+                            </div>
+                        </div><!--end card-body-->
+                    </div><!--end card-->
+                </div> <!-- end col -->
+            </div><!--end row-->
+        </div>
+    </div>
+</div>
+
+        
+      
+    </div>
+    <!-- end page-wrapper -->
+
+
+{%include "includes/scripts.html"%}
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    {% include "includes/head.html" %}
+
+<body id="body" class="dark-sidebar">
+  
+    {%include "includes/nav.html"%}
+    <div class="page-wrapper">
+
+        <!-- Page Content-->
+        <div class="page-content-tab">
+
+            <div class="container-fluid">
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            
+                           
+                        </div>
+                        <!--end page-title-box-->
+                    </div>
+                    <!--end col-->
+                </div>
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+                    
+                    <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Суретті жүктеңіз</h4>
+                                </div><!--end card-header-->
+                                <div class="card-body">
+                                    <div class="d-grid">
+                                        <p class="text-muted">Url арқылы қажетті суретті жүктеңіз</p>
+                                    
+                                        <div class="col-sm-12">
+                                                <input name ="text" class="form-control" type="url" value="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg" id="url-input">
+                                            </div>
+
+                                        <button id = "btn1" type="submit" class="btn btn-primary upload btn btn-primary mt-4" for="input-file">Жүктеу</button>
+                                    </div>
+                                                                
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                    </div><!--end col--> 
+                    <div id = "img1" class="pr-box d-block justify-content-center rounded shadow overflow-hidden bg-light p-1 col-xl-6" ></div>
+               
+            </div><!-- container -->
+
+       
+            
+           <!--Start Footer-->
+           {% comment %} <!-- Footer Start -->
+           <footer class="footer text-center text-sm-start">
+               &copy; <script>
+                   document.write(new Date().getFullYear())
+               </script> Unikit <span class="text-muted d-none d-sm-inline-block float-end">Crafted with <i
+                       class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+           </footer> {% endcomment %}
+           <!-- end Footer -->                
+           <!--end footer-->
+        </div>
+        <!-- end page content -->
+    </div>
+    <!-- end page-wrapper -->
+
+    <!-- Javascript  -->
+    {%include "includes/scripts.html"%}
+    <script>
+        document.getElementById('btn1').addEventListener('click', function() {
+            let url = document.getElementById('url-input').value;
+        
+            document.getElementById('img1').innerHTML = `<img style="height: 212px; max-width: 100%; border-radius: 5px; float: left;" src="${url}" alt="Loaded Image" /> <p id ="text1"> </p>`;
+        
+            
+            fetch('/gpt', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({url: url})
+            }).then(response => {
+                if (response.ok) {
+                    return response.json();  
+                } else {
+                    throw new Error('Network response was not ok.');
+                }
+            }).then(data => {
+                console.log(data);
+                text = data['text'];
+                document.getElementById('text1').innerHTML = text;
+            }).catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+        });
+        
+    </script>
+    
+</body>
+
+</html>

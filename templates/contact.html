@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "includes/head.html" %}
+<body id="body" class="dark-sidebar">
+
+    {% include "includes/nav.html"%}
+
+    <div class="page-wrapper">
+
+        <!-- Page Content-->
+        <div class="page-content-tab">
+
+            <div class="container-fluid">
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="float-end">
+                               
+                            </div>
+                            <h4 class="page-title">Контактілер</h4>
+                        </div>
+                        <!--end page-title-box-->
+                    </div>
+                    <!--end col-->
+                </div>
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="met-profile">
+                                    <div class="row">
+                                        <div class="col-lg-4 align-self-center mb-3 mb-lg-0">
+                                            <div class="met-profile-main">
+                                                <div class="met-profile-main-pic">
+                                                    <img src="/static/assets/images/users/prof.jpeg" alt="" height="110" class="rounded-circle">
+                                                    
+                                                </div>
+                                                <div class="met-profile_user-detail">
+                                                    <h5 class="met-user-name">Байжанов Алишер</h5>                                                        
+                                                    <p class="mb-0 met-user-name-post">Satbayev University</p>                                                        
+                                                </div>
+                                            </div>                                                
+                                        </div><!--end col-->
+                                        
+                                        <div class="col-lg-4 ms-auto align-self-center">
+                                            <ul class="list-unstyled personal-detail mb-0">
+                                                <li class="mt-2"><i class="las la-envelope text-secondary font-22 align-middle mr-2"></i> <b> Email </b>: <a href = "mailto:a.baizhanov@stud.satbayev.university">a.baizhanov@stud.satbayev.university</a></li>
+                                                <li class="mt-2"><i class="fab fa-github text-secondary font-22 align-middle mr-2"></i> <b> Github </b> : 
+                                                    <a href="https://github.com/r1chsoul" class="font-14 text-primary">https://github.com/r1chsoul</a> 
+                                                </li>                                                   
+                                            </ul>
+                                           
+                                        </div><!--end col-->
+                                        <div class="col-lg-4 align-self-center">
+                                            {% comment %} <div class="row">
+                                                <div class="col-auto text-end border-end">
+                                                    <button type="button" class="btn btn-soft-primary btn-icon-circle btn-icon-circle-sm mb-2">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </button>
+                                                    <p class="mb-0 fw-semibold">Facebook</p>
+                                                    <h4 class="m-0 fw-bold">25k <span class="text-muted font-12 fw-normal">Followers</span></h4>
+                                                </div><!--end col-->
+                                                <div class="col-auto">
+                                                    <button type="button" class="btn btn-soft-info btn-icon-circle btn-icon-circle-sm mb-2">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </button>
+                                                    <p class="mb-0 fw-semibold">Twitter</p>
+                                                    <h4 class="m-0 fw-bold">58k <span class="text-muted font-12 fw-normal">Followers</span></h4>
+                                                </div><!--end col-->
+                                            </div><!--end row-->                                                {% endcomment %}
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </div><!--end f_profile-->                                                                                
+                            </div><!--end card-body-->  
+                            <div class="row mt-5">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Сұрақтар</h4>
+                                            
+                                        </div><!--end card-header-->
+                                        <div class="card-body">
+                                            <div class="accordion" id="accordionExample-faq">
+                                                <div class="accordion-item">
+                                                    <h5 class="accordion-header m-0" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            Нейрондық желілер дегеніміз не?
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample-faq">
+                                                        <div class="accordion-body">
+                                                        <strong >Нейрондық желілер</strong> – бұл биологиялық нейрондардың жұмыс істеу принципіне негізделген жасанды интеллект технологиясы. Олар әртүрлі есептерді, мысалы, суреттерді тану және классификациялау үшін қолданылады.
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h5 class="accordion-header m-0" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                            Нейрондық желілердің артықшылықтары қандай?
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample-faq">
+                                                        <div class="accordion-body">
+                                                            Нейрондық желілердің басты артықшылығы – олар үлкен көлемдегі деректерді өңдей алады және күрделі үлгілерді анықтайды. Сонымен қатар, олар өздігінен үйрену қабілетіне ие, яғни уақыт өте келе тиімдірек жұмыс істейді.                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h5 class="accordion-header m-0" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                            Нейрондық желілерді қолданудың қиындықтары қандай?
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample-faq">
+                                                        <div class="accordion-body">
+                                                            Нейрондық желілерді үйрету үшін үлкен көлемдегі белгіленген деректер қажет. Сондай-ақ, оларды үйрету процесі көп уақыт пен ресурстарды талап етеді.                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!--end card-body-->
+                                    </div><!--end card-->
+                                </div><!--end col-->
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Датасет</h4>
+                                            <p class="text-muted mb-0">Датасет алғыңыз келсе форманы толтырыңыз</p>
+                                        </div><!--end card-header-->
+                                        <div class="card-body">
+                                            <div class="row">                                        
+                                                <div class="col-12">
+                                                    <form action="#" method="post">
+                                                        {% csrf_token %}
+                                                        <div class="form-group row">
+                                                            <div class="col-lg-6">
+                                                                <input class="form-control mb-2" type="text" id="name"  name = "name" placeholder="ФИО">                                                       
+                                                            </div> 
+                                                            <div class="col-lg-6">
+                                                                <input class="form-control mb-2" type="email" id="example-email-input3" name = "email" placeholder="Email">
+                                                            </div>                                                   
+                                                        </div>
+                                                        
+                                                        <div class="form-group row">
+                                                            <div class="col-12">
+                                                                <input class="form-control mb-2" type="text" id="subject2" name = "subject" placeholder="Тақрып">                                                       
+                                                            </div>                                                    
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="4" name = "message" placeholder="Хабарлама"></textarea>
+                                                        </div>                                                
+                                                       
+                                                        <button type="submit" class="btn btn-primary btn-block px-4">Жіберу</button>
+                                                    </form>
+                                                </div><!--end col-->
+                                            </div><!--end row-->                                    
+                                        </div><!--end card-body-->
+                                    </div><!--end card-->
+                                </div><!--end col-->
+                            </div><!--end row-->                      
+                        </div><!--end card-->
+                    </div><!--end col-->
+                </div><!--end row-->
+
+            </div><!-- container -->
+
+           
+           
+               
+        </div>
+        <!-- end page content -->
+    </div>
+    <!-- end page-wrapper -->
+
+
+{%include "includes/scripts.html"%}
+</body>
+
+</html>
