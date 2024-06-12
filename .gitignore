@@ -162,3 +162,6 @@ prediction/model/
 .prediction/model/
 .prediction/model
 prediction/model
+
+clasification/model.pth
+.clasification/model.pth
